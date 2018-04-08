@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* nawigacja */
+
+nav {
+    background-color: white;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: limegreen;
+    transition: all 0.5s;
+}
+
+ul li a:hover {
+    color: #222;
+}
+
+/* header */
+
+header {
+    background-image: url(../resources/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#title-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+#header-title {
+    font-weight: 100;
+    font-size: 60px
+}
+
+#header-title2 {
+    font-weight: 100;
+    font-size: 30px;
+/*    line-height: 0;*/
+}
+
+#title-text h1 span {
+    color: limegreen;
+    font-weight: 400;
+}
+
+/* sekcja o mnie */
+
+#oMnie {
+    padding: 30px 0;
+    background-color: #E0ECF8;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h3 span {
+    color: limegreen;
+    font-weight: 400;
+}
+
+#portrait {
+    margin: 0;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#portrait img {
+    width: 50%;
+    border: 10px white solid;
+    border-radius: 15px;
+}
+
+
+#section-text {
+    width: 50%;
+    display: inline-block;
+}
+
+/* portfolio section */
+
+#portfolio {
+    padding: 30px 0;
+    text-align: center;
+}
+
+#all-boxes {
+    display: inline-block;
+    width: 90%;
+    overflow: hidden;
+}
+
+/* Wewnatrz pojemnika na box'y */
+
+.image-box {
+    width: 33%;
+    padding-bottom: 30%;
+    float: left;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+#box1 {
+    background-image: url('https://gamersdecrypted.com/wp-content/uploads/2015/10/8746809577_7a8578f8fa_b.jpg');
+}
+
+#box2 {
+     background-image: url('https://lumiere-a.akamaihd.net/v1/images/Death-Star-I-copy_36ad2500.jpeg?region=0%2C0%2C1600%2C900&width=768');
+}
+
+#box3 {
+    background-image: url('https://www.bleedingcool.com/wp-content/uploads/2017/09/Darth-Vader-Helmet-side-600x450.jpg');
+}
+
+/* wewnatrz kazdego box */
+
+#box1-inner {
+    
+}
+
+#box2-inner {
+   
+}
+
+#box3-inner {
+    
+}
+
+.inner-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.inner-box:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* skills */
+
+#skills p {
+    margin: 0 20px;
+}
