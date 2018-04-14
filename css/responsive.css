@@ -1,3 +1,56 @@
-@media all (max-width: 992px) {
+@media all and (max-width: 992px) {
+    #portrait,
+    #portrait img {
+        width: 100%;
+    }
+    
+    #section-text {
+        width: 100%;
+    }
+    
+    .image-box {
+        width: 100%;
+    }
+    
+    .contact-box {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #contact form {
+        
+        margin: 50px;
+    }
+    
+    .toggle {
+        display: block;
+        text-align: right;
+        padding: 20px;
+        color: limegreen;
+        font-size: 20px;
+    }
+    
+    #contact h3 {
+        text-align: center;
+    }
+    
+    ul {
+        display: none;
+    }
+    
+    nav #drop:checked + ul {
+        display: block;
+    }
+    
+    ul li {
+        display: block;
+    }
+}
+
+@media all and (max-width: 768px) {
+    
+}
+
+@media all and (max-width: 480px) {
     
 }

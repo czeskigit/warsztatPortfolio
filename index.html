@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Moje portfolio - warsztaty</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -14,11 +18,15 @@
     <!--   pasek nawigacji   -->
 
     <nav>
+       
+       <label for="drop" class="toggle">Menu <i class="fa fa-bars" aria-hidden="true"></i></label>
+       <input type="checkbox" id="drop">
+       
         <ul>
             <li><a href="#oMnie">O mnie</a></li>
             <li><a href="#skills">Umiejętności</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="">Kontakt</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
 
@@ -41,32 +49,118 @@
         </article>
     </section>
 
-   <section id="skills">
-       <h3>Moje <span>umiejętności</span></h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos assumenda atque beatae, magnam doloribus veniam architecto, sit qui praesentium repellat itaque incidunt obcaecati dolorum maiores repellendus quae. Odit, sed, optio.</p>
-   </section>
-   
-    <section id="portfolio">
-        <h3>Moje <span>portfolio</span></h3>
-        <div id="all-boxes">
-            <div class="image-box" id="box1">
-                <div class="inner-box" id="box1-inner">
-                    <div class="inner-box-content" id="box-content1"></div>
-                </div>
-            </div>
-            <div class="image-box" id="box2">
-                <div class="inner-box" id="box2-inner">
-                    <div class="inner-box-content" id="box-content2"></div>
-                </div>
-            </div>
-            <div class="image-box" id="box3">
-                <div class="inner-box" id="box3-inner">
-                    <div class="inner-box-content" id="box-content3"></div>
-                </div>
+    <!--   Skills   -->
+
+    <section id="skills">
+        <div id="skills-content">
+            <h3>Moje <span>umiejętności</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos assumenda atque beatae, magnam doloribus veniam architecto, sit qui praesentium repellat itaque incidunt obcaecati dolorum maiores repellendus quae. Odit, sed, optio.</p>
+            <div id="skills-icons">
+                <figure>
+                    <img src="resources/icon1.png" alt="">
+                    <figcaption>skill 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/icon2.png" alt="">
+                    <figcaption>skill 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/icon3.png" alt="">
+                    <figcaption>skill 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/icon4.png" alt="">
+                    <figcaption>skill 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/icon5.png" alt="">
+                    <figcaption>skill 5</figcaption>
+                </figure>
             </div>
         </div>
     </section>
 
+    <!--    Portfolio   -->
+
+    <section id="portfolio">
+        <h3>Moje <span>portfolio</span></h3>
+        <div class="image-box" id="box1">
+            <div class="inner-box">
+                <div class="mask">
+                    <div class="inner-box-content">
+                        <h4>TEST</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi natus maiores debitis iure, quas excepturi, provident nemo? Sunt id, rerum pariatur! Necessitatibus deserunt aspernatur earum vitae nostrum cum, molestias itaque?</p>
+                        <i class="fa fa-link fa-2x"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="image-box" id="box2">
+            <div class="inner-box">
+                <div class="mask">
+                    <div class="inner-box-content">
+                        <h4>TEST</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, molestias accusamus vel quae veniam, deleniti praesentium asperiores consequuntur a itaque harum eveniet. Nesciunt eius, quibusdam iste officia ex voluptatum eveniet?</p>
+                        <i class="fa fa-link fa-2x"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="image-box" id="box3">
+            <div class="inner-box">
+                <div class="mask">
+                    <div class="inner-box-content">
+                        <h4>TEST</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste similique rem minima, ad sunt aspernatur alias maiores id qui blanditiis. Odio dolores quis, error doloremque dolorem, corrupti praesentium commodi molestias.</p>
+                        <i class="fa fa-link fa-2x"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+    <!--   Kontakt   -->
+
+    <section id="contact">
+        <div class="contact-box">
+            <h3>
+                Darth<span> Vader</span>
+            </h3>
+
+            <address>
+                ul. Ciemnej strony mocy 1<br>
+                12-345 Coruscant<br>
+                <br>
+                tel: 123-456-789<br>
+                    e-mail: <a href="">astmatyk@imperium.com</a>
+            </address>
+
+            <div id="icon-link">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+
+        <div class="contact-box">
+            <form action="">
+                <input class="input" type="text" placeholder="Imię i Nazwisko">
+                <input class="input" type="email" placeholder="Adres e-mail">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+                <input id="send" type="submit" value="WYŚLIJ">
+            </form>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <footer>
+        <p>Copyright&copy;Darth Vader</p>
+    </footer>
 </body>
 
 </html>
